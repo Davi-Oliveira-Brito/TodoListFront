@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fustat, Inter_Tight } from "next/font/google";
+import { Toaster } from "sonner";
+import { AuthProvider } from "@/contexts/AuthContext";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fustat = Fustat({
+  variable: "--font-fustat",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
   subsets: ["latin"],
 });
 
@@ -25,10 +28,15 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${fustat.variable} ${interTight.variable} h-full antialiased`}
     >
-      {/* TODO: envolver com <AuthProvider> quando o contexto for implementado */}
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col bg-background font-body text-slate-900">
+        <AuthProvider>
+          <div className="flex flex-1 flex-col">{children}</div>
+          <Footer />
+        </AuthProvider>
+        <Toaster position="bottom-right" richColors />
+      </body>
     </html>
   );
 }
