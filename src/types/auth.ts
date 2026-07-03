@@ -4,13 +4,19 @@ export interface Register {
   senha: string;
 }
 
-export interface Login{
+export interface Login {
   email: string;
   senha: string;
 }
 
 export interface AuthResponse {
   token: string;
+  nome: string;
+  email: string;
+}
+
+export interface AuthErrorResponse {
+  mensagem: string;
 }
 
 export interface Usuario {

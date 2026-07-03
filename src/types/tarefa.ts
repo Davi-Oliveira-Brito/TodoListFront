@@ -1,20 +1,22 @@
 export interface TipoTarefa {
-  id: number; // 1 = Normal, 2 = Urgente
-  nome: string;
+  id: number;
+  descricao: string;
+  dataInclusao: string;
 }
 
 export interface Tarefa {
   id: number;
   titulo: string;
-  descricao?: string;
+  descricao: string;
   concluida: boolean;
+  dataInclusao: string;
   tipoTarefaId: number;
-  tipoTarefa?: TipoTarefa;
+  tipoTarefaDescricao: string;
 }
 
 export interface TarefaPayload {
   titulo: string;
-  descricao?: string;
-  concluida: boolean;
+  descricao: string;
   tipoTarefaId: number;
+  concluida: boolean;
 }
