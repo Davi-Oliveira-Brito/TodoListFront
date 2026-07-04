@@ -50,7 +50,7 @@ export default function RegisterForm() {
         value={senha}
         onChange={(e) => setSenha(e.target.value)}
         required
-        minLength={6}
+        minLength={4}
       />
 
       {erro && <p className="text-sm text-red-600">{erro}</p>}

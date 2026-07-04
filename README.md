@@ -1,5 +1,7 @@
 # TodoList Front
 
+🎥 [Assista à demonstração em vídeo](https://youtu.be/xSI3pPvKvW0)
+
 Front-end da aplicação de gerenciamento de tarefas (To Do List), construído em Next.js para consumir a [TodoListApi](https://github.com/Davi-Oliveira-Brito/TodoListApi) — API RESTful com autenticação JWT desenvolvida como desafio técnico para a vaga de Desenvolvedor C# na **PWI Sistemas**.
 
 ---
@@ -113,7 +115,7 @@ npm run dev
 http://localhost:3000
 ```
 
-Certifique-se de que a TodoListApi esteja rodando (por padrão em `https://localhost:7100` ou na porta configurada no Swagger dela) antes de criar conta ou logar.
+Certifique-se de que a TodoListApi esteja rodando (por padrão em `http://localhost:5222` ou na porta configurada no Swagger dela) antes de criar conta ou logar.
 
 ---
 
@@ -121,9 +123,9 @@ Certifique-se de que a TodoListApi esteja rodando (por padrão em `https://local
 
 | Variável | Descrição | Exemplo |
 |----------|-----------|---------|
-| `NEXT_PUBLIC_API_URL` | URL base da TodoListApi | `https://localhost:7100` |
+| `NEXT_PUBLIC_API_URL` | URL base da TodoListApi | `http://localhost:5222` |
 
-Se a variável não for definida, o front cai no fallback `https://localhost:7100` (ver `src/lib/constants.ts`).
+Se a variável não for definida, o front cai no fallback `http://localhost:5222` (ver `src/lib/constants.ts`).
 
 ---
 
