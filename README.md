@@ -2,7 +2,7 @@
 
 🎥 [Assista à demonstração em vídeo](https://youtu.be/xSI3pPvKvW0)
 
-Front-end da aplicação de gerenciamento de tarefas (To Do List), construído em Next.js para consumir a [TodoListApi](https://github.com/Davi-Oliveira-Brito/TodoListApi) — API RESTful com autenticação JWT desenvolvida como desafio técnico para a vaga de Desenvolvedor C# na **PWI Sistemas**.
+Front-end da aplicação de gerenciamento de tarefas (To Do List), construído em Next.js para consumir a [TodoListApi](https://github.com/Davi-Oliveira-Brito/TodoListApi) - API RESTful com autenticação JWT.
 
 ---
 
